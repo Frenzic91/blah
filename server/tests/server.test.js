@@ -93,7 +93,7 @@ describe('GET /todos/:id', () => {
       .end(done)
   })
 
-  it('should return a 400 id param is invalid', (done) => {
+  it('should return a 400 id if param is invalid', (done) => {
     request(app)
       .get('/todos/123456')
       .expect(400)
